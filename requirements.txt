@@ -1,0 +1,4 @@
+nltk
+transformers
+python-Levenshtein
+gensim

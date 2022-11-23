@@ -1,0 +1,28 @@
+{
+    "variables": {
+        "rh": [true, false],
+        "pos": [true, false],
+        "embeddings": ["word2vec/googlenews_word2vec.pt", "bert-base-cased", "prajjwal1/bert-tiny", "no"]
+    },
+
+    "corpus_path": "data/cpcfg_process",
+    "serialization_path": "data/corpus_cache/final_binarised/kim_ptb.pkl",
+    "report_output_dir": "output/final",
+    "device": "cuda",
+
+    "ptb_tag_embedding_size": 50,
+    "learning_rate": 0.0005,
+    "num_layers": 5,
+    "hidden_size": 350,
+
+    "batch_size": 256,
+    "eval_batch_size": 32,
+    "epochs": 200,
+    "max_sequence_length": 1000,
+    "dropout": 0.0,
+
+    "optimizer": "adam",
+    "beam_size": 5,
+    "bidirectional": true,
+    "rnn_class": "gru"
+}
